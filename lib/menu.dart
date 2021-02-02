@@ -45,7 +45,6 @@ class Menu extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }

@@ -8,8 +8,15 @@ class Candidature extends StatelessWidget {
         title: Center(child:
         Text('CFP-GETECH', style: TextStyle(fontSize: 30, color: Colors.white))),
       ),
-      body: Center(child:
-      Text('Votre reussite notre fierte', style: TextStyle(fontSize: 30, color: Colors.black),)),
+      body: Column(
+    children: <Widget>[
+      TextField(
+        decoration: InputDecoration(hintText: 'Voter prénom'),
+
+    ),
+      RaisedButton(),
+    ],
+    ),
     );
   }
 }

@@ -11,8 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       drawer: Menu(),
-
-        appBar: AppBar(
+      appBar: AppBar(
           backgroundColor: Colors.lightGreen,
           title: Center(child:
         Text('CFP-GETECH', style: TextStyle(fontSize: 30, color: Colors.white))),
