@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './programmes.dart';
 import './accueil.dart';
 import './candidature.dart';
 class Menu extends StatelessWidget {
@@ -14,7 +13,7 @@ class Menu extends StatelessWidget {
               // ),
               child:CircleAvatar(
                 radius: 40,
-                backgroundImage: AssetImage('images/cfp.png'),
+                backgroundImage: AssetImage('assets/images/cfp.png'),
               ),
             ),
             ListTile(
@@ -25,15 +24,7 @@ class Menu extends StatelessWidget {
                     builder: (context) =>  Accueil()));
               },
             ),
-            Divider(),
-            ListTile(
-              title: Text('Programmes', style: TextStyle(fontSize: 20)),
-              onTap: (){
-                Navigator.of(context).pop();
-                Navigator.push(context, MaterialPageRoute(
-                    builder: (context) =>  Programmes()));
-              },
-            ),
+
             Divider(),
             ListTile(
               title: Text('Candidature', style: TextStyle(fontSize: 20)),
