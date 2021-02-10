@@ -4,7 +4,7 @@ import 'package:flutter_cfp/constant.dart';
 import '';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

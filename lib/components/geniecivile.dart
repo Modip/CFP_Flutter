@@ -14,7 +14,7 @@ class GenieCivie extends StatelessWidget{
       child: Row(
         children: <Widget>[
           GeniecivileImage(
-            image:"assets/images/cfp_2.png",
+            image:"assets/images/typefor.png",
             press: (){},
           ),
           GeniecivileImage(

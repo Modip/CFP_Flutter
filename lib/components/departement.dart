@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cfp/constant.dart';
+import 'package:flutter_cfp/screens/details/detaildevweb.dart';
 
 class Departement extends StatelessWidget {
   const Departement({
@@ -14,18 +15,28 @@ class Departement extends StatelessWidget {
       child: Row(
         children: <Widget>[
           DepartementImage(
-            image: "assets/images/cfp.png",
+            image: "assets/images/dev.jpg",
+            title: "Développent web",
+            press: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Detaildevweb(),
+              ),
+              );
+            },
+          ),
+          DepartementImage(
+            image: "assets/images/infograph.jpg",
+            title: "Développent web",
+            press: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Detaildevweb(),
+              ),
+              );
+            },
+          ),
+          DepartementImage(
+            image: "assets/images/dev_2.jpg",
             title: "Developpent web",
-            press: (){},
-          ),
-          DepartementImage(
-            image: "assets/images/cfp.png",
-            title: "Developpent Mobile",
-            press: (){},
-          ),
-          DepartementImage(
-            image: "assets/images/cfp.png",
-            title: "Infographie ",
             press: (){},
           ),
         ],
@@ -79,10 +90,11 @@ class DepartementImage extends StatelessWidget {
                     RichText(text: TextSpan(
                       children: [
                         TextSpan(text: "$title".toUpperCase(),
-                            style: TextStyle(color: kPrimaryColor.withOpacity(0.5))
+                            style: TextStyle(color: kPrimaryColor.withOpacity(0.5),
+                            ),
                         ),
                       ],
-                    ),
+                     ),
                     ),
                   ],
                 ),

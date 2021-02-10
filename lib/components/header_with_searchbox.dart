@@ -38,7 +38,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                 ),
                 Spacer(),
                 // Image du logo
-                Image.asset("assets/images/cfp_2.png",),
+                Image.asset("assets/images/cfp_2.png"),
               ],
             ),
           ),

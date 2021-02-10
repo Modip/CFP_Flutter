@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import './accueil.dart';
-import './candidature.dart';
 class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,19 +22,11 @@ class Menu extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(
                     builder: (context) =>  Accueil()));
               },
-            ),
+    ),
+    ]
+    ),
+    );
 
-            Divider(),
-            ListTile(
-              title: Text('Candidature', style: TextStyle(fontSize: 20)),
-              onTap: (){
-                Navigator.of(context).pop();
-                Navigator.push(context, MaterialPageRoute(
-                    builder: (context) =>  Candidature()));
-              },
-            ),
-          ],
-        ),
-      );
+
   }
 }

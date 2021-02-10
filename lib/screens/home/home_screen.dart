@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cfp/components/body.dart';
 import 'package:flutter_cfp/constant.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class HomeScreen extends StatelessWidget {
       appBar: buildAppBar(),
       body: Body(),
       bottomNavigationBar: Container(
-        height: 80,
+        height: 60,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -18,6 +19,22 @@ class HomeScreen extends StatelessWidget {
               blurRadius: 15,
               color: kPrimaryColor.withOpacity(0.5),
             ),
+          ],
+        ),
+        child: Row(
+          children: <Widget>[
+            IconButton(
+                icon: SvgPicture.asset("assets/icons/facebook.svg"),
+                onPressed: () {}
+            ),
+            IconButton(
+                icon: SvgPicture.asset("assets/icons/twitter.svg"),
+                onPressed: () {}
+            ),IconButton(
+                icon: SvgPicture.asset("assets/icons/facebook.svg"),
+                onPressed: () {}
+            ),
+
           ],
         ),
       ),
@@ -29,10 +46,9 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor:kPrimaryColor,
         leading: IconButton(
-          icon: SvgPicture.asset("assets/icons/menu.svg"),
+         icon: SvgPicture.asset("assets/icons/menu.svg"),
           onPressed: (){},
-        ),
-
+       ),
     );
   }
 }
