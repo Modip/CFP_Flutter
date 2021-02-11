@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_cfp/components/candidater.dart';
-import 'package:flutter_cfp/components/departement.dart';
 import 'package:flutter_cfp/constant.dart';
-import 'package:flutter_cfp/screens/details/iconcard.dart';
 import 'package:flutter_cfp/screens/details/imageandicon.dart';
 import 'package:flutter_cfp/screens/details/titredescription.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class Body extends StatelessWidget{
+class Detail extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -18,60 +15,56 @@ class Body extends StatelessWidget{
             ImageAndIcon(size: size),
             Titredescription(
               title: "Infographie",
-              description: "Lorem Infographie leeeoe nvbvryc cvnvuaia"),
+              description: "L'infographie est le domaine de la création d'images."),
               SizedBox(
                 height: kDefaultPadding,
               ),
-
             Row(
               children: <Widget>[
+                Expanded(
+                  child: FlatButton(
+                    onPressed: () {
+                    //  Navigator.push(context, MaterialPageRoute(
+                    //    builder: (context) => Accueil(),
+                    //  ),
+                     // );
+                    },
+                    child: Text("Accueil",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                      ),
+                    ),
+                  ),
+                ),
                 SizedBox(
                   width: size.width /2,
                   height: 84,
                   child: FlatButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(20)
+                        topLeft: Radius.circular(30)
                       ),
                     ),
                     color: kPrimaryColor,
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(
-                        builder: (context) => Body(),
+                        builder: (context) => FormScreen(),
                       ),
                       );
                     },
                     child: Text("Candidater",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 25,
                       ),
                     ),
                   ),
                 ),
-                Expanded(
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => Departement(),
-                        ),
-                        );
-                      },
-                      child: Text("Accueil",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ))
-
-              ],
-            )
-
+              ]
+            ),
         ]
-
-        ),
+      ),
     );
-
   }
 }

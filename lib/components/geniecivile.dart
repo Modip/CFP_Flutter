@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_cfp/constant.dart';
 
 
-class GenieCivie extends StatelessWidget{
-  const GenieCivie ({
+class GenieCivile extends StatelessWidget{
+  const GenieCivile ({
     Key key,
   }) : super(key: key);
   @override

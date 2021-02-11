@@ -6,7 +6,7 @@ import 'titredepartement.dart';
 import 'departement.dart';
 import 'geniecivile.dart';
 
-class Body extends StatelessWidget {
+class Accueil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -19,7 +19,7 @@ class Body extends StatelessWidget {
           TitreDepartement(title: "Genie Civile", press: (){}),
           GenieCivile(),
           SizedBox(height: kDefaultPadding),
-      ],
+        ],
       ),
     );
   }
