@@ -15,26 +15,24 @@ class HomeScreen extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-                offset: Offset(0, -10),
+              offset: Offset(0, -10),
               blurRadius: 15,
               color: kPrimaryColor.withOpacity(0.5),
             ),
           ],
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
                 icon: SvgPicture.asset("assets/icons/facebook.svg"),
-                onPressed: () {}
-            ),
+                onPressed: () {}),
             IconButton(
                 icon: SvgPicture.asset("assets/icons/twitter.svg"),
-                onPressed: () {}
-            ),IconButton(
+                onPressed: () {}),
+            IconButton(
                 icon: SvgPicture.asset("assets/icons/facebook.svg"),
-                onPressed: () {}
-            ),
-
+                onPressed: () {}),
           ],
         ),
       ),
@@ -43,12 +41,12 @@ class HomeScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-        elevation: 0,
-        backgroundColor:kPrimaryColor,
-        leading: IconButton(
-         icon: SvgPicture.asset("assets/icons/menu.svg"),
-          onPressed: (){},
-       ),
+      elevation: 0,
+      backgroundColor: kPrimaryColor,
+      leading: IconButton(
+        icon: SvgPicture.asset("assets/icons/menu.svg"),
+        onPressed: () {},
+      ),
     );
   }
 }

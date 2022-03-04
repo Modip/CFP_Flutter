@@ -13,6 +13,9 @@ import 'package:flutter_cfp/main.dart' as app;
 
 void main() => run(_testMain);
 
+run(void Function() testMain) {
+}
+
 void _testMain() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
